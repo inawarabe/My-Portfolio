@@ -67,6 +67,36 @@ These two PM portfolios are the style references for this project:
 - Do not remove or rename any existing client entries without explicit confirmation
 - Always test filter functionality after modifying project data
 - Keep all CSS in a shared stylesheet or consistent inline Tailwind classes across pages
+- When making changes to a specific page, ONLY edit the file for that page
+- Never modify shared files (styles.css, index.html) unless explicitly asked
+- If a fix requires touching a shared file, warn me first before making changes
+- Do not apply the same change across all pages unless I specifically say "apply to all pages"
+- If a CSS change is needed for one page only, use page-specific classes or scoped styles, not global styles
+- Never refactor or clean up files that are not related to the current task
+- If you are unsure whether a change will affect other pages, ask me first
+- Changes to shared components (header, footer, nav) must be flagged before editing since they appear on all pages
+- After making changes, confirm exactly which files were modified and which were left untouched 
+
+## Page Structure Rules
+
+- The header and footer are LOCKED components — never modify them unless I explicitly say "edit the header" or "edit the footer"
+- Treat the header and footer as separate components from the page content, similar to Shopify's theme architecture
+- All page-specific changes must only affect the content between the header and footer
+- The main page content sits between the header and footer — this is the only area Claude should edit by default
+- If a requested change would require touching the header or footer, STOP and ask me first before proceeding
+- Never add, remove, or restyle header or footer elements as a side effect of another task
+- Navigation links, logo, and header layout are frozen — do not touch unless specifically told to
+
+## Section-Based Editing Rules
+
+- Treat each page like it is made of independent sections (like Shopify page templates)
+- When editing a section, only touch the HTML and CSS belonging to that section
+- Do not restructure or reorganize sections unless explicitly asked
+- Each section should be self-contained — changes to one section must not affect the layout or styling of another
+- If adding new CSS for a section, use specific class names scoped to that section only
+- Never use global or broad CSS selectors that could unintentionally affect other sections or pages
+- Before editing, identify exactly which section is being changed and confirm it with me
+- After changes, tell me exactly which section and file was modified
 
 ## Git Workflow
 
