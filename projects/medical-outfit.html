@@ -7,7 +7,7 @@
   <link rel="icon" type="image/jpeg" href="../images/favicon.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Inter:ital,wght@0,300..700;1,300..700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -38,52 +38,110 @@
   </div>
 
   <main>
-    <div class="container--narrow project-page">
+    <div class="container project-page">
 
       <a href="../work.html" class="back-link">← Back to all projects</a>
 
       <div class="project__meta">
         <span class="badge badge--p">Project</span>
-        <span class="project__country"><span>🇸🇦</span> Saudi Arabia</span>
+        <span class="project__country" style="padding-left:5px;">
+          <svg width="16" height="11" viewBox="0 0 24 16" aria-hidden="true"><rect width="24" height="16" fill="#006C35"/><rect x="5" y="12.3" width="13" height="0.9" fill="#fff"/><polygon points="5,11.9 5,13.6 3,12.75" fill="#fff"/><rect x="18" y="11.6" width="1" height="2.3" fill="#fff"/><rect x="19" y="12.35" width="2.3" height="0.8" fill="#fff"/></svg>
+          Saudi Arabia
+        </span>
       </div>
 
       <h1 class="project__title">Medical Outfit</h1>
 
-      <div class="project__hero-image">Replace Image</div>
+      <div class="project__hero-image" style="margin-bottom:28px; display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,.5); font-family:var(--font-nav); font-size:11px; letter-spacing:.16em; text-transform:uppercase;">Image coming soon</div>
 
-      <div class="project__content">
-        <aside class="project__sidebar">
-          <div class="sidebar-block">
-            <p class="sidebar-block__label">Type</p>
-            <p class="sidebar-block__value">Project</p>
-          </div>
-          <div class="sidebar-block">
-            <p class="sidebar-block__label">Market</p>
-            <p class="sidebar-block__value">Saudi Arabia</p>
-          </div>
-          <div class="sidebar-block">
-            <p class="sidebar-block__label">Role</p>
-            <p class="sidebar-block__value">Junior Project Manager<br>Creative971 Shopify Agency</p>
-          </div>
-          <div class="sidebar-block">
-            <p class="sidebar-block__label">Live Store</p>
-            <p class="sidebar-block__value"><a href="#" target="_blank" rel="noopener">Add store URL →</a></p>
-          </div>
-        </aside>
+      <div class="project__hero-copy">
+        <p>
+          Medical Outfit is a Saudi retailer of professional medical apparel — scrubs, lab coats, and accessories from 15+ established labels. Its Shopify storefront makes shopping by specialty and brand simple for healthcare workers.
+        </p>
+      </div>
 
-        <div class="project__main">
-          <section>
-            <h2>Overview</h2>
-            <p class="placeholder-text">
-              Project overview coming soon. This section will include scope, deliverables, and key outcomes.
-            </p>
-          </section>
-          <section>
-            <h2>My Role</h2>
-            <p class="placeholder-text">
-              Role details coming soon. This section will cover responsibilities, timeline management, and team coordination.
-            </p>
-          </section>
+      <div class="project__meta-strip">
+        <div class="meta-strip__item">
+          <span class="label">Client</span>
+          <span class="value">Medical Outfit</span>
+        </div>
+        <div class="meta-strip__item">
+          <span class="label">Role</span>
+          <span class="value">Project Manager</span>
+        </div>
+        <div class="meta-strip__item">
+          <span class="label">Market</span>
+          <span class="value">Saudi Arabia</span>
+        </div>
+        <div class="meta-strip__item">
+          <span class="label">Date</span>
+          <span class="value">2024</span>
+        </div>
+        <div class="meta-strip__item">
+          <span class="label">Live store</span>
+          <span class="value"><a href="https://medicaloutfit.com" target="_blank" rel="noopener">medicaloutfit.com →</a></span>
+        </div>
+      </div>
+
+      <!-- ── Story — desktop / tablet: alternating image + copy ── -->
+      <div class="project__story">
+        <div class="story-section">
+          <div class="story-section__body">
+            <p class="story-section__eyebrow">My Role</p>
+            <h2>Building an online home for medical apparel</h2>
+            <p>I managed the Shopify build for Medical Outfit, bringing scrubs, lab coats, and accessories from 15+ established medical apparel labels into one Saudi storefront.</p>
+          </div>
+          <div class="story-section__media" style="background:linear-gradient(150deg, #1A3A5C 0%, #2D5A8A 55%, #4A7FA8 100%); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,.4); font-family:var(--font-nav); font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; text-align:center; padding:20px;">Image coming soon</div>
+        </div>
+
+        <div class="story-section reverse">
+          <div class="story-section__body">
+            <p class="story-section__eyebrow">The Brief</p>
+            <h2>Elegance and comfort, for people on their feet all day</h2>
+            <p>Medical Outfit needed a storefront that made it easy to shop by specialty and brand — from Cherokee to Grey's Anatomy — while keeping the experience as practical as the garments themselves.</p>
+          </div>
+          <div class="story-section__media" style="background:linear-gradient(150deg, #1A3A5C 0%, #2D5A8A 55%, #4A7FA8 100%); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,.4); font-family:var(--font-nav); font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; text-align:center; padding:20px;">Image coming soon</div>
+        </div>
+
+        <div class="story-section">
+          <div class="story-section__body">
+            <p class="story-section__eyebrow">Result</p>
+            <h2>A trusted storefront for healthcare professionals</h2>
+            <p>The result is a Shopify store that serves Saudi healthcare workers with quality, comfort, and style, brand portfolio and all.</p>
+          </div>
+          <div class="story-section__media" style="background:linear-gradient(150deg, #1A3A5C 0%, #2D5A8A 55%, #4A7FA8 100%); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,.4); font-family:var(--font-nav); font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; text-align:center; padding:20px;">Image coming soon</div>
+        </div>
+      </div>
+
+      <!-- ── Story — mobile: swipeable slider with dots ── -->
+      <div class="project__story-mobile">
+        <div class="story-slider" id="storySlider">
+          <div class="story-slide">
+            <div class="story-slide__media" style="background:linear-gradient(150deg, #1A3A5C 0%, #2D5A8A 55%, #4A7FA8 100%); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,.4); font-family:var(--font-nav); font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; text-align:center; padding:20px;">Image coming soon</div>
+            <p class="story-slide__eyebrow">My Role</p>
+            <h2>Building an online home for medical apparel</h2>
+            <p>I managed the Shopify build bringing 15+ medical apparel labels into one Saudi storefront.</p>
+          </div>
+
+          <div class="story-slide">
+            <div class="story-slide__media" style="background:linear-gradient(150deg, #1A3A5C 0%, #2D5A8A 55%, #4A7FA8 100%); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,.4); font-family:var(--font-nav); font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; text-align:center; padding:20px;">Image coming soon</div>
+            <p class="story-slide__eyebrow">The Brief</p>
+            <h2>Elegance and comfort, for people on their feet all day</h2>
+            <p>Easy shopping by specialty and brand, as practical as the garments themselves.</p>
+          </div>
+
+          <div class="story-slide">
+            <div class="story-slide__media" style="background:linear-gradient(150deg, #1A3A5C 0%, #2D5A8A 55%, #4A7FA8 100%); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,.4); font-family:var(--font-nav); font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; text-align:center; padding:20px;">Image coming soon</div>
+            <p class="story-slide__eyebrow">Result</p>
+            <h2>A trusted storefront for healthcare professionals</h2>
+            <p>Serving Saudi healthcare workers with quality, comfort, and style.</p>
+          </div>
+        </div>
+
+        <div class="story-dots" id="storyDots">
+          <button class="story-dot active" type="button" aria-label="Go to slide 1: My Role" data-index="0"></button>
+          <button class="story-dot" type="button" aria-label="Go to slide 2: The Brief" data-index="1"></button>
+          <button class="story-dot" type="button" aria-label="Go to slide 3: Result" data-index="2"></button>
         </div>
       </div>
 
@@ -93,6 +151,7 @@
 
     </div>
 
+    <!-- Contact -->
     <section class="contact" id="contact">
       <div class="container--narrow">
         <div class="contact__inner">
@@ -142,5 +201,69 @@
     navContactLink.addEventListener('click', closeNav);
   </script>
 
+  <script>
+    (function () {
+      var slider = document.getElementById('storySlider');
+      var dots = Array.prototype.slice.call(document.querySelectorAll('#storyDots .story-dot'));
+      if (!slider || !dots.length) return;
+
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var index = 0;
+      var autoplayTimer = null;
+      var resumeTimer = null;
+      var isSyncingFromScroll = false;
+
+      function setActiveDot(i) {
+        dots.forEach(function (dot, di) { dot.classList.toggle('active', di === i); });
+      }
+
+      function goTo(i, smooth) {
+        index = (i + dots.length) % dots.length;
+        isSyncingFromScroll = true;
+        slider.scrollTo({ left: index * slider.clientWidth, behavior: smooth === false ? 'auto' : 'smooth' });
+        setActiveDot(index);
+        setTimeout(function () { isSyncingFromScroll = false; }, 400);
+      }
+
+      function stopAutoplay() {
+        if (autoplayTimer) { clearInterval(autoplayTimer); autoplayTimer = null; }
+      }
+
+      function startAutoplay() {
+        if (reduceMotion) return;
+        stopAutoplay();
+        autoplayTimer = setInterval(function () { goTo(index + 1); }, 5000);
+      }
+
+      function pauseThenResume() {
+        stopAutoplay();
+        clearTimeout(resumeTimer);
+        resumeTimer = setTimeout(startAutoplay, 4000);
+      }
+
+      dots.forEach(function (dot) {
+        dot.addEventListener('click', function () {
+          goTo(parseInt(dot.dataset.index, 10));
+          pauseThenResume();
+        });
+      });
+
+      slider.addEventListener('pointerdown', pauseThenResume);
+      slider.addEventListener('touchstart', pauseThenResume, { passive: true });
+
+      var scrollSyncTimer = null;
+      slider.addEventListener('scroll', function () {
+        if (isSyncingFromScroll) return;
+        clearTimeout(scrollSyncTimer);
+        scrollSyncTimer = setTimeout(function () {
+          var i = Math.round(slider.scrollLeft / slider.clientWidth);
+          index = Math.max(0, Math.min(dots.length - 1, i));
+          setActiveDot(index);
+        }, 80);
+      });
+
+      startAutoplay();
+    })();
+  </script>
 </body>
 </html>

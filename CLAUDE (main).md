@@ -98,6 +98,18 @@ These two PM portfolios are the style references for this project:
 - Before editing, identify exactly which section is being changed and confirm it with me
 - After changes, tell me exactly which section and file was modified
 
+## Project Pages Template Rule
+
+- All project pages must follow the same structure and layout template — only the content changes, never the structure
+- The order of sections must remain consistent across all project pages — do not add, remove, or reorder sections unless I explicitly request a structural change
+- If I ask for a new section to be added to one project page, do not add it to other project pages unless I say "apply to all project pages"
+- If I make a structural change to one project page that I want applied globally, I will explicitly say "apply this structure to all project pages"
+- Never restructure a project page as a side effect of a content change
+- CSS classes used for the project page template must stay consistent across all project pages — do not rename or refactor them
+- If a content change on one project page requires a structural workaround, flag it to me first before implementing
+- When adding a new project page, use the existing project pages as the template — do not create a new structure from scratch
+- If you are unsure whether a change breaks the consistent template structure, ask me before proceeding
+
 ## Git Workflow
 
 - Push to `main` triggers automatic Vercel deploy
