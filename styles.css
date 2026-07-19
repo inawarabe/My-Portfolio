@@ -1019,6 +1019,7 @@ a   { color: inherit; text-decoration: none; }
   .project__sidebar { position: static; }
   .project__title { font-size: 2.2rem; }
   .project__hero-image { aspect-ratio: 16/7; }
+  .project__hero-image--nayomi { aspect-ratio: 1/1; }
 
   .project__meta-strip { flex-direction: column; gap: 0; border-bottom: none; }
   .meta-strip__item {
