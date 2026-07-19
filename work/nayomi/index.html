@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nayomi — Ali Aden</title>
+  <link rel="icon" type="image/jpeg" href="/images/favicon.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Inter:ital,wght@0,300..700;1,300..700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="site-nav">
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+        <svg width="30" height="30" viewBox="0 0 1024 1024" aria-hidden="true"><path d="M177.50016 307.2h614.4a20.48 20.48 0 1 0 0-40.96h-614.4a20.48 20.48 0 1 0 0 40.96zM177.50016 757.76h614.4a20.48 20.48 0 1 0 0-40.96h-614.4a20.48 20.48 0 1 0 0 40.96zM177.50016 532.48h614.4a20.48 20.48 0 1 0 0-40.96h-614.4a20.48 20.48 0 1 0 0 40.96z" fill="currentColor"/></svg>
+      </button>
+      <a href="/" class="nav-logo">Ali Ismail Aden</a>
+      <div class="nav-links">
+        <a href="/work/" class="nav-link active">Work</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ── Mobile Nav Drawer ── -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav__drawer">
+      <button class="mobile-nav__close" id="navClose" aria-label="Close menu">&#x2715;</button>
+      <nav class="mobile-nav__links">
+        <a href="/work/" class="mobile-nav__link">Work</a>
+        <a href="#contact" class="mobile-nav__link" id="navContactLink">Contact</a>
+      </nav>
+    </div>
+    <div class="mobile-nav__overlay" id="navOverlay"></div>
+  </div>
+
+  <main>
+    <div class="container project-page">
+
+      <a href="/work/" class="back-link">← Back to all projects</a>
+
+      <div class="project__meta">
+        <span class="badge badge--ps">Project &amp; Support</span>
+        <span class="project__country" style="padding-left:5px;">
+          <svg width="16" height="11" viewBox="0 0 24 16" aria-hidden="true"><rect width="24" height="16" fill="#fff"/><rect width="24" height="5.33" fill="#00732F"/><rect y="10.67" width="24" height="5.33" fill="#000"/><rect width="6" height="16" fill="#FF0000"/></svg>
+          UAE
+        </span>
+        <span class="project__country" style="padding-left:5px;">
+          <svg width="12" height="14" viewBox="0 0 108.44 122.88" aria-hidden="true"><g><path style="fill-rule:evenodd;clip-rule:evenodd;fill:#95BF47;" d="M94.98,23.66c-0.09-0.62-0.63-0.96-1.08-1c-0.45-0.04-9.19-0.17-9.19-0.17s-7.32-7.1-8.04-7.83 c-0.72-0.72-2.13-0.5-2.68-0.34c-0.01,0-1.37,0.43-3.68,1.14c-0.38-1.25-0.95-2.78-1.76-4.32c-2.6-4.97-6.42-7.6-11.03-7.61 c-0.01,0-0.01,0-0.02,0c-0.32,0-0.64,0.03-0.96,0.06c-0.14-0.16-0.27-0.32-0.42-0.48c-2.01-2.15-4.58-3.19-7.67-3.1 c-5.95,0.17-11.88,4.47-16.69,12.11c-3.38,5.37-5.96,12.12-6.69,17.35c-6.83,2.12-11.61,3.6-11.72,3.63 c-3.45,1.08-3.56,1.19-4.01,4.44C9.03,39.99,0,109.8,0,109.8l75.65,13.08l32.79-8.15C108.44,114.73,95.06,24.28,94.98,23.66 L94.98,23.66z M66.52,16.63c-1.74,0.54-3.72,1.15-5.87,1.82c-0.04-3.01-0.4-7.21-1.81-10.83C63.36,8.47,65.58,13.58,66.52,16.63 L66.52,16.63z M56.69,19.68c-3.96,1.23-8.29,2.57-12.63,3.91c1.22-4.67,3.54-9.33,6.38-12.38c1.06-1.14,2.54-2.4,4.29-3.12 C56.38,11.52,56.73,16.39,56.69,19.68L56.69,19.68z M48.58,3.97c1.4-0.03,2.57,0.28,3.58,0.94C50.55,5.74,49,6.94,47.54,8.5 c-3.78,4.06-6.68,10.35-7.83,16.43c-3.6,1.11-7.13,2.21-10.37,3.21C31.38,18.58,39.4,4.23,48.58,3.97L48.58,3.97z"/><path style="fill-rule:evenodd;clip-rule:evenodd;fill:#5E8E3E;" d="M93.9,22.66c-0.45-0.04-9.19-0.17-9.19-0.17s-7.32-7.1-8.04-7.83c-0.27-0.27-0.63-0.41-1.02-0.47l0,108.68 l32.78-8.15c0,0-13.38-90.44-13.46-91.06C94.9,23.04,94.35,22.7,93.9,22.66L93.9,22.66z"/><path style="fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;" d="M57.48,39.52l-3.81,14.25c0,0-4.25-1.93-9.28-1.62c-7.38,0.47-7.46,5.12-7.39,6.29 c0.4,6.37,17.16,7.76,18.11,22.69c0.74,11.74-6.23,19.77-16.27,20.41c-12.05,0.76-18.69-6.35-18.69-6.35l2.55-10.86 c0,0,6.68,5.04,12.02,4.7c3.49-0.22,4.74-3.06,4.61-5.07c-0.52-8.31-14.18-7.82-15.04-21.48c-0.73-11.49,6.82-23.14,23.48-24.19 C54.2,37.88,57.48,39.52,57.48,39.52L57.48,39.52z"/></g></svg>
+          Shopify Plus
+        </span>
+      </div>
+
+      <h1 class="project__title">Nayomi</h1>
+
+      <div class="project__hero-image" style="margin-bottom:28px;">
+        <img src="https://www.creative971.com/wp-content/uploads/2025/06/nayomy_first.jpg" alt="Nayomi Shopify store design" loading="lazy">
+      </div>
+
+      <div class="project__hero-copy">
+        <p>
+          Nayomi is a Middle Eastern lingerie retailer headquartered in Dubai. This Shopify Plus launch blends elevated brand storytelling with careful user experience, performance-first development, and a mobile-ready storefront built for GCC shoppers.
+        </p>
+      </div>
+
+      <div class="project__meta-strip">
+        <div class="meta-strip__item">
+          <span class="label">Client</span>
+          <span class="value">Jamjoom Fashion</span>
+        </div>
+        <div class="meta-strip__item">
+          <span class="label">Role</span>
+          <span class="value">Project Manager</span>
+        </div>
+        <div class="meta-strip__item">
+          <span class="label">Market</span>
+          <span class="value">UAE — GCC</span>
+        </div>
+        <div class="meta-strip__item">
+          <span class="label">Date</span>
+          <span class="value">2025</span>
+        </div>
+        <div class="meta-strip__item">
+          <span class="label">Live store</span>
+          <span class="value"><a href="https://ae.nayomi.com/en" target="_blank" rel="noopener">ae.nayomi.com/en →</a></span>
+        </div>
+      </div>
+
+      <!-- ── Story — desktop / tablet: alternating image + copy ── -->
+      <div class="project__story">
+        <div class="story-section">
+          <div class="story-section__body">
+            <p class="story-section__eyebrow">My Role</p>
+            <h2>Keeping design, dev, QA and support moving in sync</h2>
+            <p>I led the project rhythm for the Nayomi launch, translating business goals into a clear delivery plan. I aligned stakeholders, managed timelines, and kept design, development, QA, and support teams moving in sync.</p>
+          </div>
+          <div class="story-section__media">
+            <img src="https://www.creative971.com/wp-content/uploads/2025/06/q2.jpg" alt="Nayomi mobile shopping experience" loading="lazy">
+          </div>
+        </div>
+
+        <div class="story-section reverse">
+          <div class="story-section__body">
+            <p class="story-section__eyebrow">The Challenge</p>
+            <h2>A premium identity that still had to load fast in the GCC</h2>
+            <p>Nayomi needed a digital storefront that reflected the brand's premium lingerie identity while delivering fast, reliable performance across GCC devices.</p>
+            <p>The project required a tight launch cadence, strong cross-team coordination, and a smooth transition from design to Shopify Plus delivery.</p>
+          </div>
+          <div class="story-section__media">
+            <img src="https://www.creative971.com/wp-content/uploads/2025/06/q1.jpg" alt="Nayomi homepage and product visuals" loading="lazy">
+          </div>
+        </div>
+
+        <div class="story-section">
+          <div class="story-section__body">
+            <p class="story-section__eyebrow">Design &amp; Delivery</p>
+            <h2>Elegant, fast, and built for volume</h2>
+            <p>Elegance and timelessness drive the Nayomi visual system. We refined the user experience around product discovery, funnel clarity, and checkout ease, while keeping the interface clean and emotionally confident.</p>
+            <p>The development phase focused on performance, speed and efficiency so the site could support a high-volume GCC audience without losing the luxury feel.</p>
+          </div>
+          <div class="story-section__media">
+            <img src="https://www.creative971.com/wp-content/uploads/2025/06/q3.jpg" alt="Nayomi product category experience" loading="lazy">
+          </div>
+        </div>
+
+        <div class="story-section reverse">
+          <div class="story-section__body">
+            <p class="story-section__eyebrow">Mobile-First Experience</p>
+            <h2>Built for how GCC shoppers actually browse</h2>
+            <p>Since shoppers in the region rely heavily on mobile, the build prioritized responsive navigation, quick load times, and streamlined product browsing. I reviewed mobile usability feedback and ensured the final release met real customer behavior.</p>
+          </div>
+          <div class="story-section__media">
+            <img src="https://www.creative971.com/wp-content/uploads/2025/06/r1.jpg" alt="Nayomi product detail layout" loading="lazy">
+          </div>
+        </div>
+
+        <div class="story-section">
+          <div class="story-section__body">
+            <p class="story-section__eyebrow">Result</p>
+            <h2>A polished Shopify Plus store, ready for what's next</h2>
+            <p>Nayomi launched as a polished Shopify Plus store with a refined customer journey and strong ongoing support readiness. The new site reflects a premium lingerie brand while keeping operations and updates easy for the client.</p>
+          </div>
+          <div class="story-section__media">
+            <img src="https://www.creative971.com/wp-content/uploads/2025/06/nayomy_first.jpg" alt="Nayomi Shopify store design" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Story — mobile: swipeable slider with dots ── -->
+      <div class="project__story-mobile">
+        <div class="story-slider" id="storySlider">
+          <div class="story-slide">
+            <div class="story-slide__media">
+              <img src="https://www.creative971.com/wp-content/uploads/2025/06/q2.jpg" alt="Nayomi mobile shopping experience" loading="lazy">
+            </div>
+            <p class="story-slide__eyebrow">My Role</p>
+            <h2>Keeping design, dev, QA and support moving in sync</h2>
+            <p>I led the project rhythm for the Nayomi launch, translating business goals into a clear delivery plan and keeping every team aligned.</p>
+          </div>
+
+          <div class="story-slide">
+            <div class="story-slide__media">
+              <img src="https://www.creative971.com/wp-content/uploads/2025/06/q1.jpg" alt="Nayomi homepage and product visuals" loading="lazy">
+            </div>
+            <p class="story-slide__eyebrow">The Challenge</p>
+            <h2>A premium identity that still had to load fast in the GCC</h2>
+            <p>Nayomi needed a digital storefront that reflected the brand's premium lingerie identity while delivering fast, reliable performance across GCC devices.</p>
+            <p>The project required a tight launch cadence and a smooth transition from design to Shopify Plus delivery.</p>
+          </div>
+
+          <div class="story-slide">
+            <div class="story-slide__media">
+              <img src="https://www.creative971.com/wp-content/uploads/2025/06/q3.jpg" alt="Nayomi product category experience" loading="lazy">
+            </div>
+            <p class="story-slide__eyebrow">Design &amp; Delivery</p>
+            <h2>Elegant, fast, and built for volume</h2>
+            <p>The visual system stays refined around product discovery and checkout ease, without losing the luxury feel under high-volume GCC traffic.</p>
+          </div>
+
+          <div class="story-slide">
+            <div class="story-slide__media">
+              <img src="https://www.creative971.com/wp-content/uploads/2025/06/r1.jpg" alt="Nayomi product detail layout" loading="lazy">
+            </div>
+            <p class="story-slide__eyebrow">Mobile-First Experience</p>
+            <h2>Built for how GCC shoppers actually browse</h2>
+            <p>Responsive navigation, quick load times, and streamlined browsing, reviewed against real customer behavior.</p>
+          </div>
+
+          <div class="story-slide">
+            <div class="story-slide__media">
+              <img src="https://www.creative971.com/wp-content/uploads/2025/06/nayomy_first.jpg" alt="Nayomi Shopify store design" loading="lazy">
+            </div>
+            <p class="story-slide__eyebrow">Result</p>
+            <h2>A polished Shopify Plus store, ready for what's next</h2>
+            <p>Nayomi launched with a refined customer journey and strong ongoing support readiness.</p>
+          </div>
+        </div>
+
+        <div class="story-dots" id="storyDots">
+          <button class="story-dot active" type="button" aria-label="Go to slide 1: My Role" data-index="0"></button>
+          <button class="story-dot" type="button" aria-label="Go to slide 2: The Challenge" data-index="1"></button>
+          <button class="story-dot" type="button" aria-label="Go to slide 3: Design and Delivery" data-index="2"></button>
+          <button class="story-dot" type="button" aria-label="Go to slide 4: Mobile-First Experience" data-index="3"></button>
+          <button class="story-dot" type="button" aria-label="Go to slide 5: Result" data-index="4"></button>
+        </div>
+      </div>
+
+      <div class="project__bottom">
+        <a href="/work/" class="back-link">← Back to all projects</a>
+      </div>
+
+    </div>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container--narrow">
+        <div class="contact__inner">
+          <div>
+            <h2 class="contact__heading">Get in Touch</h2>
+            <p class="contact__subtext">Open to new opportunities, collaborations, and conversations. Feel free to reach out.</p>
+          </div>
+          <div class="contact__links">
+            <a href="mailto:aden.ali997@gmail.com" class="contact__link">
+              <span class="contact__icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+              </span>
+              aden.ali997@gmail.com
+            </a>
+            <a href="https://linkedin.com/in/ali-aden97/" target="_blank" rel="noopener" class="contact__link">
+              <span class="contact__icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </span>
+              linkedin.com/in/ali-aden97/
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer__copy">&copy; 2026 Ali Ismail Aden. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ── Mobile Nav JS ── -->
+  <script>
+    const hamburger = document.getElementById('navHamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    const navClose  = document.getElementById('navClose');
+    const navOverlay = document.getElementById('navOverlay');
+    const navContactLink = document.getElementById('navContactLink');
+
+    function openNav()  { mobileNav.classList.add('open');    document.body.style.overflow = 'hidden'; }
+    function closeNav() { mobileNav.classList.remove('open'); document.body.style.overflow = ''; }
+
+    hamburger.addEventListener('click', openNav);
+    navClose.addEventListener('click', closeNav);
+    navOverlay.addEventListener('click', closeNav);
+    navContactLink.addEventListener('click', closeNav);
+  </script>
+
+  <script>
+    (function () {
+      var slider = document.getElementById('storySlider');
+      var dots = Array.prototype.slice.call(document.querySelectorAll('#storyDots .story-dot'));
+      if (!slider || !dots.length) return;
+
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var index = 0;
+      var autoplayTimer = null;
+      var resumeTimer = null;
+      var isSyncingFromScroll = false;
+
+      function setActiveDot(i) {
+        dots.forEach(function (dot, di) { dot.classList.toggle('active', di === i); });
+      }
+
+      function goTo(i, smooth) {
+        index = (i + dots.length) % dots.length;
+        isSyncingFromScroll = true;
+        slider.scrollTo({ left: index * slider.clientWidth, behavior: smooth === false ? 'auto' : 'smooth' });
+        setActiveDot(index);
+        setTimeout(function () { isSyncingFromScroll = false; }, 400);
+      }
+
+      function stopAutoplay() {
+        if (autoplayTimer) { clearInterval(autoplayTimer); autoplayTimer = null; }
+      }
+
+      function startAutoplay() {
+        if (reduceMotion) return;
+        stopAutoplay();
+        autoplayTimer = setInterval(function () { goTo(index + 1); }, 5000);
+      }
+
+      function pauseThenResume() {
+        stopAutoplay();
+        clearTimeout(resumeTimer);
+        resumeTimer = setTimeout(startAutoplay, 4000);
+      }
+
+      dots.forEach(function (dot) {
+        dot.addEventListener('click', function () {
+          goTo(parseInt(dot.dataset.index, 10));
+          pauseThenResume();
+        });
+      });
+
+      slider.addEventListener('pointerdown', pauseThenResume);
+      slider.addEventListener('touchstart', pauseThenResume, { passive: true });
+
+      var scrollSyncTimer = null;
+      slider.addEventListener('scroll', function () {
+        if (isSyncingFromScroll) return;
+        clearTimeout(scrollSyncTimer);
+        scrollSyncTimer = setTimeout(function () {
+          var i = Math.round(slider.scrollLeft / slider.clientWidth);
+          index = Math.max(0, Math.min(dots.length - 1, i));
+          setActiveDot(index);
+        }, 80);
+      });
+
+      startAutoplay();
+    })();
+  </script>
+</body>
+</html>
