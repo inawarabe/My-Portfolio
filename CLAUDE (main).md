@@ -46,8 +46,15 @@ These two PM portfolios are the style references for this project:
 
 ## Design Preferences
 
-- Warm cream background (#F7F5F0) — not stark white
-- Navy (#1A3A5C) as primary accent for headings and buttons
+- Warm cream background (#faf6f1) — not stark white
+- Text colors:
+  - Headings (serif) and primary body copy: charcoal #434345 (the --text token) — NOT navy
+  - Secondary/muted text, eyebrows, and small uppercase labels: slate #5A6B7D (--text-muted)
+  - On dark bands (e.g. the Contact section): white #FFFFFF, with muted white rgba(255,255,255,0.7) for subtext
+- Button colors:
+  - Primary/solid button (.btn): charcoal #434345 (--text token) background, white text; hover darkens to #2E2D2E. Same charcoal is used for the active filter chip and the Contact CTA band.
+  - Secondary/outline button (.btn-outline): navy #1A3A5C border + text, inverts to navy fill with white text on hover
+- Navy (#1A3A5C, the --navy token) is the interactive/link accent — nav hover & active state, inline text links, back-link hover — not the color for headings or the primary button
 - Minion Pro as primary heading font, with Source Serif Pro or Libre Baskerville as Google Fonts fallback
 - DM Sans or Inter as secondary font for labels, badges, and small UI text
 - Responsive: works on desktop, tablet, and mobile
