@@ -424,6 +424,47 @@
 
   </main>
 
+  <!-- ── Back to Top ── -->
+  <style>
+    .back-to-top {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      width: 48px;
+      height: 48px;
+      border: none;
+      border-radius: 50%;
+      background: var(--text);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: var(--shadow-hover);
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity var(--ease), transform var(--ease), background var(--ease);
+      z-index: 90;
+    }
+    .back-to-top.visible { opacity: 1; transform: translateY(0); }
+    .back-to-top:hover { background: #2E2D2E; }
+    .back-to-top svg { width: 20px; height: 20px; }
+    @media (max-width: 768px) {
+      .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 44px;
+        height: 44px;
+      }
+    }
+  </style>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 19V5"/>
+      <path d="m5 12 7-7 7 7"/>
+    </svg>
+  </button>
+
   <!-- ── Footer ── -->
   <footer class="site-footer">
     <div class="container">
@@ -461,6 +502,22 @@
     // regardless of which rows are present or hidden.
     const activeBtn = document.querySelector('.filter-btn.active');
     applyFilter(activeBtn ? activeBtn.dataset.filter : 'all');
+  </script>
+
+  <!-- ── Back to Top JS ── -->
+  <script>
+    (function () {
+      var btn = document.getElementById('backToTop');
+      if (!btn) return;
+      function toggle() {
+        btn.classList.toggle('visible', window.scrollY > 400);
+      }
+      window.addEventListener('scroll', toggle, { passive: true });
+      toggle();
+      btn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
   </script>
 
   <!-- ── Restore scroll position when returning from a case study ── -->
