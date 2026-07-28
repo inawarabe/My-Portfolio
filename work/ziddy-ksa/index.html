@@ -92,7 +92,7 @@
       </div>
 
       <!-- ── Story — desktop / tablet: alternating image + copy ── -->
-      <div class="project__story">
+      <div class="project__story" id="storySlider">
         <div class="story-section">
           <div class="story-section__body">
             <p class="story-section__eyebrow">My Role</p>
@@ -127,43 +127,12 @@
         </div>
       </div>
 
-      <!-- ── Story — mobile: swipeable slider with dots ── -->
-      <div class="project__story-mobile">
-        <div class="story-slider" id="storySlider">
-          <div class="story-slide">
-            <div class="story-slide__media" style="aspect-ratio: 1024/828;">
-              <img src="/images/ziddy-ksa/2.jpg" alt="Ziddy product catalog" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">My Role</p>
-            <h2>Localizing a global kids' fashion brand for Saudi Arabia</h2>
-            <p>I manage the Shopify Plus support retainer for Ziddy's Saudi Arabia storefront.</p>
-          </div>
-
-          <div class="story-slide">
-            <div class="story-slide__media" style="aspect-ratio: 1024/828;">
-              <img src="/images/ziddy-ksa/3.jpg" alt="Ziddy storefront detail" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">The Brief</p>
-            <h2>A Portuguese brand, tailored for KSA</h2>
-            <p>An Arabic-ready storefront that keeps the global boutique aesthetic intact.</p>
-          </div>
-
-          <div class="story-slide">
-            <div class="story-slide__media" style="aspect-ratio: 1024/828;">
-              <img src="/images/ziddy-ksa/4.jpg" alt="Ziddy KSA Shopify Plus storefront" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">Result</p>
-            <h2>A boutique kids' brand, localized without losing its identity</h2>
-            <p>A playful, empowering brand voice with fast checkout and mobile-first usability.</p>
-          </div>
-        </div>
-
-        <div class="story-dots" id="storyDots">
-          <button class="story-dot active" type="button" aria-label="Go to slide 1: My Role" data-index="0"></button>
-          <button class="story-dot" type="button" aria-label="Go to slide 2: The Brief" data-index="1"></button>
-          <button class="story-dot" type="button" aria-label="Go to slide 3: Result" data-index="2"></button>
-        </div>
-      </div>
+      <!-- Dots — hidden on desktop, shown as slider navigation on mobile -->
+      <div class="story-dots" id="storyDots">
+                <button class="story-dot active" type="button" aria-label="Go to slide 1: My Role" data-index="0"></button>
+                <button class="story-dot" type="button" aria-label="Go to slide 2: The Brief" data-index="1"></button>
+                <button class="story-dot" type="button" aria-label="Go to slide 3: Result" data-index="2"></button>
+              </div>
 
       <div class="project__bottom">
         <a href="/work/" class="back-link">← Back to all projects</a>

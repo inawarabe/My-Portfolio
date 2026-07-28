@@ -92,7 +92,7 @@
       </div>
 
       <!-- ── Story — desktop / tablet: alternating image + copy ── -->
-      <div class="project__story">
+      <div class="project__story" id="storySlider">
         <div class="story-section">
           <div class="story-section__body">
             <p class="story-section__eyebrow">My Role</p>
@@ -127,43 +127,12 @@
         </div>
       </div>
 
-      <!-- ── Story — mobile: swipeable slider with dots ── -->
-      <div class="project__story-mobile">
-        <div class="story-slider" id="storySlider">
-          <div class="story-slide">
-            <div class="story-slide__media">
-              <img src="/images/womens-secret-ksa/2.jpg" alt="Women'Secret product catalog" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">My Role</p>
-            <h2>Localizing an international lingerie brand for KSA</h2>
-            <p>I manage the Shopify Plus support retainer for Women'Secret's Saudi Arabia storefront.</p>
-          </div>
-
-          <div class="story-slide">
-            <div class="story-slide__media">
-              <img src="/images/womens-secret-ksa/3.jpg" alt="Women'Secret storefront detail" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">The Brief</p>
-            <h2>Global identity, local language</h2>
-            <p>Global brand standards preserved while the frontend is fully localized into Arabic.</p>
-          </div>
-
-          <div class="story-slide">
-            <div class="story-slide__media">
-              <img src="/images/womens-secret-ksa/4.jpg" alt="Women'Secret KSA Shopify Plus storefront" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">Result</p>
-            <h2>A global brand that feels local</h2>
-            <p>An international design that reads naturally for Arabic-speaking customers.</p>
-          </div>
-        </div>
-
-        <div class="story-dots" id="storyDots">
-          <button class="story-dot active" type="button" aria-label="Go to slide 1: My Role" data-index="0"></button>
-          <button class="story-dot" type="button" aria-label="Go to slide 2: The Brief" data-index="1"></button>
-          <button class="story-dot" type="button" aria-label="Go to slide 3: Result" data-index="2"></button>
-        </div>
-      </div>
+      <!-- Dots — hidden on desktop, shown as slider navigation on mobile -->
+      <div class="story-dots" id="storyDots">
+                <button class="story-dot active" type="button" aria-label="Go to slide 1: My Role" data-index="0"></button>
+                <button class="story-dot" type="button" aria-label="Go to slide 2: The Brief" data-index="1"></button>
+                <button class="story-dot" type="button" aria-label="Go to slide 3: Result" data-index="2"></button>
+              </div>
 
       <div class="project__bottom">
         <a href="/work/" class="back-link">← Back to all projects</a>

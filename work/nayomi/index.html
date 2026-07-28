@@ -91,8 +91,9 @@
         </div>
       </div>
 
-      <!-- ── Story — desktop / tablet: alternating image + copy ── -->
-      <div class="project__story">
+      <!-- ── Story sections — single markup, desktop alternating layout / mobile slider ── -->
+      <div class="project__story" id="storySlider">
+
         <div class="story-section">
           <div class="story-section__body">
             <p class="story-section__eyebrow">My Role</p>
@@ -149,65 +150,16 @@
             <img src="/images/nayomi/6.jpg" alt="Nayomi Shopify store design" loading="lazy">
           </div>
         </div>
-      </div>
 
-      <!-- ── Story — mobile: swipeable slider with dots ── -->
-      <div class="project__story-mobile">
-        <div class="story-slider" id="storySlider">
-          <div class="story-slide">
-            <div class="story-slide__media">
-              <img src="/images/nayomi/2.jpg" alt="Nayomi mobile shopping experience" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">My Role</p>
-            <h2>Keeping design, dev, QA and support moving in sync</h2>
-            <p>I led the project rhythm for the Nayomi launch, translating business goals into a clear delivery plan and keeping every team aligned.</p>
-          </div>
+      </div><!-- /.project__story -->
 
-          <div class="story-slide">
-            <div class="story-slide__media">
-              <img src="/images/nayomi/3.jpg" alt="Nayomi homepage and product visuals" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">The Challenge</p>
-            <h2>A premium identity that still had to load fast in the GCC</h2>
-            <p>Nayomi needed a digital storefront that reflected the brand's premium lingerie identity while delivering fast, reliable performance across GCC devices.</p>
-            <p>The project required a tight launch cadence and a smooth transition from design to Shopify Plus delivery.</p>
-          </div>
-
-          <div class="story-slide">
-            <div class="story-slide__media">
-              <img src="/images/nayomi/4.jpg" alt="Nayomi product category experience" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">Design &amp; Delivery</p>
-            <h2>Elegant, fast, and built for volume</h2>
-            <p>The visual system stays refined around product discovery and checkout ease, without losing the luxury feel under high-volume GCC traffic.</p>
-          </div>
-
-          <div class="story-slide">
-            <div class="story-slide__media">
-              <img src="/images/nayomi/5.jpg" alt="Nayomi product detail layout" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">Mobile-First Experience</p>
-            <h2>Built for how GCC shoppers actually browse</h2>
-            <p>Responsive navigation, quick load times, and streamlined browsing, reviewed against real customer behavior.</p>
-          </div>
-
-          <div class="story-slide">
-            <div class="story-slide__media">
-              <img src="/images/nayomi/6.jpg" alt="Nayomi Shopify store design" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">Result</p>
-            <h2>A polished Shopify Plus store, ready for what's next</h2>
-            <p>Nayomi launched with a refined customer journey and strong ongoing support readiness.</p>
-          </div>
-        </div>
-
-        <div class="story-dots" id="storyDots">
-          <button class="story-dot active" type="button" aria-label="Go to slide 1: My Role" data-index="0"></button>
-          <button class="story-dot" type="button" aria-label="Go to slide 2: The Challenge" data-index="1"></button>
-          <button class="story-dot" type="button" aria-label="Go to slide 3: Design and Delivery" data-index="2"></button>
-          <button class="story-dot" type="button" aria-label="Go to slide 4: Mobile-First Experience" data-index="3"></button>
-          <button class="story-dot" type="button" aria-label="Go to slide 5: Result" data-index="4"></button>
-        </div>
+      <!-- Dots — hidden on desktop, shown as slider navigation on mobile -->
+      <div class="story-dots" id="storyDots">
+        <button class="story-dot active" type="button" aria-label="Go to slide 1: My Role" data-index="0"></button>
+        <button class="story-dot" type="button" aria-label="Go to slide 2: The Challenge" data-index="1"></button>
+        <button class="story-dot" type="button" aria-label="Go to slide 3: Design and Delivery" data-index="2"></button>
+        <button class="story-dot" type="button" aria-label="Go to slide 4: Mobile-First Experience" data-index="3"></button>
+        <button class="story-dot" type="button" aria-label="Go to slide 5: Result" data-index="4"></button>
       </div>
 
       <div class="project__bottom">

@@ -203,52 +203,8 @@
         </div>
         <div class="testimonials__dots testimonials__dots--desktop" id="testimonialsDots"></div>
 
-        <!-- Mobile: swipeable slider with dots (mirrors the project-page story slider pattern) -->
-        <div class="testimonials__slider-mobile">
-          <div class="testimonials__slider" id="testimonialsSlider">
-            <div class="testimonials__slide">
-              <article class="testimonial-card">
-                <div class="testimonial-card__mark">&ldquo;</div>
-                <p>We had a great experience working with the Creative971 team to build 3 new websites for our group within a relatively short time frame. The project management was faultless and the team was great to work with. Specifically Ali Aden who went above and beyond for us. No task or question was too big or small, and when we did face roadblocks, there was always a selection of appropriate recommendations shared with us depending on budget and timelines. Ali was incredibly patient with our team when other priorities or tasks impacted the output from our end. He also learned our brands and businesses really well. We love our new websites, they are way more user friendly, reflect our brands really well and our traffic has increased due to the SEO efforts we also made. The bounce rate has decreased too! Thank you so much to the C971 team. I would definitely recommend them. A great investment that we already are seeing the results of.</p>
-                <button class="testimonial-card__toggle" type="button">Read more</button>
-                <div class="testimonial-card__divider"></div>
-                <div class="testimonial-card__role">Susan</div>
-                <div class="testimonial-card__company">Marketing Manager, Furless Group</div>
-              </article>
-            </div>
-            <div class="testimonials__slide">
-              <article class="testimonial-card">
-                <div class="testimonial-card__mark">&ldquo;</div>
-                <p>It was a great pleasure for me to work with you, as you demonstrated a high level of professionalism and dedication that exceeded expectations. I would like to extend a special thanks to Ali and Emy for all they contributed during the project. I highly recommend working with you.</p>
-                <button class="testimonial-card__toggle" type="button">Read more</button>
-                <div class="testimonial-card__divider"></div>
-                <div class="testimonial-card__role">Yasir Al-qunon</div>
-                <div class="testimonial-card__company">CEO, Falqunon</div>
-              </article>
-            </div>
-            <div class="testimonials__slide">
-              <article class="testimonial-card">
-                <div class="testimonial-card__mark">&ldquo;</div>
-                <p>The team has been really great in delivering us some amazing Shopify websites and some custom software! Highly recommended!</p>
-                <button class="testimonial-card__toggle" type="button">Read more</button>
-                <div class="testimonial-card__divider"></div>
-                <div class="testimonial-card__role">Jeff King</div>
-                <div class="testimonial-card__company">Founder, Book Boss</div>
-              </article>
-            </div>
-            <div class="testimonials__slide">
-              <article class="testimonial-card">
-                <div class="testimonial-card__mark">&ldquo;</div>
-                <p>Best in the game.</p>
-                <button class="testimonial-card__toggle" type="button">Read more</button>
-                <div class="testimonial-card__divider"></div>
-                <div class="testimonial-card__role">Flo Moser</div>
-                <div class="testimonial-card__company">Owner, Amongst Few</div>
-              </article>
-            </div>
-          </div>
-          <div class="testimonials__dots" id="testimonialsSliderDots"></div>
-        </div>
+        <!-- Mobile dots — hidden on desktop, shown as slider navigation on mobile -->
+        <div class="testimonials__dots testimonials__dots--mobile" id="testimonialsSliderDots"></div>
       </div>
     </section>
 
@@ -342,6 +298,10 @@
       }
 
       function render() {
+        if (window.getComputedStyle(prevBtn).display === 'none') {
+          track.style.transform = '';
+          return;
+        }
         track.style.transform = 'translateX(-' + (index * stepWidth()) + 'px)';
         prevBtn.disabled = index <= 0;
         nextBtn.disabled = index >= maxIndex;
@@ -356,7 +316,7 @@
     })();
 
     (function () {
-      var slider = document.getElementById('testimonialsSlider');
+      var slider = document.getElementById('testimonialsTrack');
       var dotsWrap = document.getElementById('testimonialsSliderDots');
       if (!slider || !dotsWrap) return;
 

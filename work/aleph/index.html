@@ -92,7 +92,7 @@
       </div>
 
       <!-- ── Story — desktop / tablet: alternating image + copy ── -->
-      <div class="project__story">
+      <div class="project__story" id="storySlider">
         <div class="story-section">
           <div class="story-section__body">
             <p class="story-section__eyebrow">My Role</p>
@@ -127,43 +127,12 @@
         </div>
       </div>
 
-      <!-- ── Story — mobile: swipeable slider with dots ── -->
-      <div class="project__story-mobile">
-        <div class="story-slider" id="storySlider">
-          <div class="story-slide">
-            <div class="story-slide__media">
-              <img src="/images/aleph/2.jpg" alt="Aleph product catalog" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">My Role</p>
-            <h2>Supporting Saudi Arabia's Premium Apple Partner</h2>
-            <p>I manage the Shopify Plus support retainer for Aleph, keeping the storefront ready for high-traffic launches.</p>
-          </div>
-
-          <div class="story-slide">
-            <div class="story-slide__media">
-              <img src="/images/aleph/3.jpg" alt="Aleph storefront detail" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">The Brief</p>
-            <h2>Built for trade-ins, filtering, and launch-day traffic</h2>
-            <p>An e-commerce experience built for Apple trade-ins and extensive filtering, in English and Arabic RTL.</p>
-          </div>
-
-          <div class="story-slide">
-            <div class="story-slide__media">
-              <img src="/images/aleph/4.jpg" alt="Aleph Shopify Plus storefront" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">Result</p>
-            <h2>A bilingual storefront ready for every launch</h2>
-            <p>A localized, high-performance storefront that holds up through new product drops.</p>
-          </div>
-        </div>
-
-        <div class="story-dots" id="storyDots">
-          <button class="story-dot active" type="button" aria-label="Go to slide 1: My Role" data-index="0"></button>
-          <button class="story-dot" type="button" aria-label="Go to slide 2: The Brief" data-index="1"></button>
-          <button class="story-dot" type="button" aria-label="Go to slide 3: Result" data-index="2"></button>
-        </div>
-      </div>
+      <!-- Dots — hidden on desktop, shown as slider navigation on mobile -->
+      <div class="story-dots" id="storyDots">
+                <button class="story-dot active" type="button" aria-label="Go to slide 1: My Role" data-index="0"></button>
+                <button class="story-dot" type="button" aria-label="Go to slide 2: The Brief" data-index="1"></button>
+                <button class="story-dot" type="button" aria-label="Go to slide 3: Result" data-index="2"></button>
+              </div>
 
       <div class="project__bottom">
         <a href="/work/" class="back-link">← Back to all projects</a>

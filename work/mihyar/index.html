@@ -92,7 +92,7 @@
       </div>
 
       <!-- ── Story — desktop / tablet: alternating image + copy ── -->
-      <div class="project__story">
+      <div class="project__story" id="storySlider">
         <div class="story-section">
           <div class="story-section__body">
             <p class="story-section__eyebrow">My Role</p>
@@ -150,63 +150,14 @@
         </div>
       </div>
 
-      <!-- ── Story — mobile: swipeable slider with dots ── -->
-      <div class="project__story-mobile">
-        <div class="story-slider" id="storySlider">
-          <div class="story-slide">
-            <div class="story-slide__media">
-              <img src="/images/mihyar/2.jpg" alt="Mihyar product collection layout" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">My Role</p>
-            <h2>Keeping the Shopify Plus build on schedule</h2>
-            <p>I coordinated design, development and QA to keep the Mihyar build moving on schedule and aligned with brand requirements.</p>
-          </div>
-
-          <div class="story-slide">
-            <div class="story-slide__media">
-              <img src="/images/mihyar/3.jpg" alt="Mihyar homepage design" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">The Challenge</p>
-            <h2>An elevated identity for a heritage menswear brand</h2>
-            <p>Mihyar needed a digital experience as premium as its traditional Arabic menswear, built on a lightweight, state-of-the-art Shopify Plus codebase.</p>
-          </div>
-
-          <div class="story-slide">
-            <div class="story-slide__media">
-              <img src="/images/mihyar/4.jpg" alt="Mihyar minimal storefront detail" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">Design &amp; Delivery</p>
-            <h2>Lightweight, fast, and built to last</h2>
-            <p>Quality and timelessness drove the UI/UX, matched by a lightweight codebase optimized for speed and performance.</p>
-          </div>
-
-          <div class="story-slide">
-            <div class="story-slide__media">
-              <img src="/images/mihyar/1.webp" alt="Mihyar mobile shopping experience" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">Mobile-First Product Experience</p>
-            <h2>Multi-buy discounts and precise sizing</h2>
-            <p>Product pages combined multi-buy discounts with clear size measurement guidance and a simplified purchase path.</p>
-          </div>
-
-          <div class="story-slide">
-            <div class="story-slide__media">
-              <img src="/images/mihyar/2.jpg" alt="Mihyar product detail page" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">Result</p>
-            <h2>A refined storefront ready for GCC shoppers</h2>
-            <p>Mihyar launched as a fast, minimal Shopify Plus store ready for mobile-first GCC shoppers.</p>
-          </div>
-        </div>
-
-        <div class="story-dots" id="storyDots">
-          <button class="story-dot active" type="button" aria-label="Go to slide 1: My Role" data-index="0"></button>
-          <button class="story-dot" type="button" aria-label="Go to slide 2: The Challenge" data-index="1"></button>
-          <button class="story-dot" type="button" aria-label="Go to slide 3: Design and Delivery" data-index="2"></button>
-          <button class="story-dot" type="button" aria-label="Go to slide 4: Mobile-First Product Experience" data-index="3"></button>
-          <button class="story-dot" type="button" aria-label="Go to slide 5: Result" data-index="4"></button>
-        </div>
-      </div>
+      <!-- Dots — hidden on desktop, shown as slider navigation on mobile -->
+      <div class="story-dots" id="storyDots">
+                <button class="story-dot active" type="button" aria-label="Go to slide 1: My Role" data-index="0"></button>
+                <button class="story-dot" type="button" aria-label="Go to slide 2: The Challenge" data-index="1"></button>
+                <button class="story-dot" type="button" aria-label="Go to slide 3: Design and Delivery" data-index="2"></button>
+                <button class="story-dot" type="button" aria-label="Go to slide 4: Mobile-First Product Experience" data-index="3"></button>
+                <button class="story-dot" type="button" aria-label="Go to slide 5: Result" data-index="4"></button>
+              </div>
 
       <div class="project__bottom">
         <a href="/work/" class="back-link">← Back to all projects</a>

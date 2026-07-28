@@ -88,7 +88,7 @@
       </div>
 
       <!-- ── Story — desktop / tablet: alternating image + copy ── -->
-      <div class="project__story">
+      <div class="project__story" id="storySlider">
         <div class="story-section">
           <div class="story-section__body">
             <p class="story-section__eyebrow">My Role</p>
@@ -123,43 +123,12 @@
         </div>
       </div>
 
-      <!-- ── Story — mobile: swipeable slider with dots ── -->
-      <div class="project__story-mobile">
-        <div class="story-slider" id="storySlider">
-          <div class="story-slide">
-            <div class="story-slide__media" style="aspect-ratio: 2/1;">
-              <img src="/images/falqunon/2.jpg" alt="Falqunon — My Role" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">My Role</p>
-            <h2>Bringing a heritage honey brand online</h2>
-            <p>I managed the Shopify build for Falqunon, a premium honey producer rooted in Hail, Saudi Arabia.</p>
-          </div>
-
-          <div class="story-slide">
-            <div class="story-slide__media" style="aspect-ratio: 2/1;">
-              <img src="/images/falqunon/3.jpg" alt="Falqunon — The Brief" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">The Brief</p>
-            <h2>Rustic heritage, modern checkout</h2>
-            <p>Traditional, artisanal packaging balanced with gift customization and same-day delivery.</p>
-          </div>
-
-          <div class="story-slide">
-            <div class="story-slide__media" style="aspect-ratio: 2/1;">
-              <img src="/images/falqunon/4.jpg" alt="Falqunon — Result" loading="lazy">
-            </div>
-            <p class="story-slide__eyebrow">Result</p>
-            <h2>A storefront as considered as the honey itself</h2>
-            <p>Talh, Sidr, and Samar honey varieties, with gifting and delivery built around Saudi shoppers.</p>
-          </div>
-        </div>
-
-        <div class="story-dots" id="storyDots">
-          <button class="story-dot active" type="button" aria-label="Go to slide 1: My Role" data-index="0"></button>
-          <button class="story-dot" type="button" aria-label="Go to slide 2: The Brief" data-index="1"></button>
-          <button class="story-dot" type="button" aria-label="Go to slide 3: Result" data-index="2"></button>
-        </div>
-      </div>
+      <!-- Dots — hidden on desktop, shown as slider navigation on mobile -->
+      <div class="story-dots" id="storyDots">
+                <button class="story-dot active" type="button" aria-label="Go to slide 1: My Role" data-index="0"></button>
+                <button class="story-dot" type="button" aria-label="Go to slide 2: The Brief" data-index="1"></button>
+                <button class="story-dot" type="button" aria-label="Go to slide 3: Result" data-index="2"></button>
+              </div>
 
       <div class="project__bottom">
         <a href="/work/" class="back-link">← Back to all projects</a>
